@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.upHeader{
+  width: 100%;
+  height: 50px;
+  background-color: #625B70;
+  display: flex;
+  justify-content: center;
+  justify-content: right;
+  cursor: default;
+}
+
+.upHeader ul{
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.upHeader ul li{
+  margin-right: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Header{
+  width: 100%;
+  height: 132px;
+  background-color: #FFFBFF;
+  display: flex;
+  justify-content: center;
+  justify-content: right;
+  justify-content: space-between;
+}
+
+.Header ul{
+  list-style: none;
+  display: flex;
+  margin-right: 44px;
+  background-color:  #FFFBFF;
+  align-items: center;
+}
+
+.Header ul li{
+  margin-right: 24px;
+  color: #21005D;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Header ul li a{
+  text-decoration: none;
+  color: #21005D;
+}
+
+.Header ul li a:visited{
+  color: #21005D;
+}
+
+.Header input{
+  background: url("/public/img/search.png") no-repeat left;
+  border: none;
+  width: 304px;
+  height: 56px;
+  background-color: #E7E0EC;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.Header input:hover {
+  background-color:  #FFFBFF;
+  border: 1px solid black;
+}
+
+.Header input:focus {
+  background-color:  #FFFBFF;
+  outline: none;
+  border: 1px solid black;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  margin-left: 44px;
+}
+
+.Logo p{
+  font-weight: 700;
+  font-size: 36px;
+  color:#6750A4;
+  margin-left: 14px;
+}
+
+.FirstBlock{
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  background: url(/public/img/main1.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.FirstBlockText{
+  width: 480px;
+  height: 536px;
+  margin-left: 44px;
+}
+
+.FirstBlockText h{
+  font-weight: 700;
+  font-size: 96px;
+  color: #FFFFFF;
+  line-height: 112px;
+  letter-spacing: -1.5px;
+}
+
+.FirstBlockText p{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color:#FFFFFF;
+  margin-bottom: 8px;
+}
+
+.FirstBlockText button{
+  width: 195px;
+  height: 56px;
+  padding: 20px;
+  margin-top: 10px;;
+  background-color: #6750A4;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  gap: 4px;
+  border-radius: 4px;
+}
+
+.FirstBlock button:active{
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.Overlay {
+  width: 50%;
+  height: 100vh;
+  background-color: #E7E0EC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 87px;
+  padding-top: 120px;
+}
+
+.Head {
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #21005D;
+  justify-content: space-between;
+  margin-right: 71px;
+}
+
+.Head img{
+  cursor: pointer;
+}
+
+.Overlay form input{
+  width: 414px;
+  height: 48px;
+  border-radius: 4px;
+  border: 2px solid #6750A4;
+}
+
+.Overlay form textarea{
+  border-radius: 4px;
+  border: 2px solid #6750A4;
+  width: 414px;
+  height: 222px;
+  resize: none;
+}
+
+.Overlay form textarea:focus{
+  border-radius: 4px;
+  border: 2px solid #6750A4;
+}
+
+.Services {
+  width: 100%;
+  height: 802px;
+  background-color: #FFFBFF;
+}
+
+.BlockHead {
+  font-size: 48px;
+  font-weight: 400;
+  color: #FFFFFF;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #625B70;
+  padding-left: 44px;
+}
+
+.Cards {
+  width: 100%;
+  height: 712px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.Card {
+  margin-top: 145px;
+  margin-left: 44px;
+  margin-right: 44px;
+  width: 305px;
+  height: 422px;
+  border-radius: 10px;
+  background-color: #E7E0EC;
+  display: block;
+  align-items: center;
+  position: relative;
+}
+
+.Card p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #21005D;
+  text-align: center;
+}
+
+.Card:hover .Card p{
+  font-size: 0px;
+}
+
+.Card img {
+  margin-left: 105px;
+  margin-top: 118px;
+  transition: all 0.3s ease-out;
+}
+
+.Card:hover .CardDescription{
+  height: 290px;
+  transition: all 0.3s ease-out;
+}
+
+.Card:hover img{
+  margin-top: 19px;
+  transition: all 0.3s ease-out;
+}
+
+.CardDescription{
+  width: 305px;
+  height: 20px;
+  background-color: #6750A4;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  text-align: center;
+}
+
+.CardDescription div{
+  margin-top: 15px;
+}
+
+.CardDescription h{
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.CardDescription p{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  margin-top: 33px;
+}
+
+.Slider {
+  width: 100%;
+  height: 585px;
+  background: rgba(103, 80, 164, 0.5);
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Svipe {
+  width: 43px;
+  height: 71px;
+  margin-top: -20px;
+  background: none;
+  border: none;
+}
+
+.Slide {
+  width: 1070px;
+  height: 605px;
+  background-color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.Slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.SlideName {
+  width: 306px;
+  height: 64px;
+  background-color: #625B70;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.SlideName p {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  line-height: 30px;
+  margin-top: 17px;
+}
+
+.SlideDescription {
+  width: 1070px;
+  height: 20px;
+  background-color: #6750A4;
+  position: absolute;
+  bottom: -20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  text-align: center;
+}
+
+.Slider:hover .SlideDescription{
+  height: 176px;
+  transition: all 0.3s ease-out;
+}
+
+.SlideDescription:hover{
+  height: 176px;
+  transition: all 0.3s ease-out;
+}
